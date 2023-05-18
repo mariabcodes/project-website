@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jordan.css"/>
+   <div class="navbar">
+    <div class="logo"><a href="./Jordan%20web%20page"><img src="Cloud9_logo_c._2023.svg.png"></a></div>
+    <div class="navigation" id="menu">
+      <ul>
+       <li><a href="./Jordan%20web%20page">Home</a></li>
+       <li><a href="./Jordan%20abou%20tme%20">About Me</a></li>
+       <li><a href="./Jordan%20Contact%20me">Contact Me</a></li>
+    </ul>
+    </div>
+   </div>
+</header>
+
+<body>
+
+</body>
+</html>
