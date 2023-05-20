@@ -35,10 +35,10 @@
 <p class="text" id="start">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 </p>
-
+<!--
 <div class="photo">
     <img src="./IMG_4656.jpg" width="300px" alt="A photo of Jordan" class="jordan-photo"/>
-</div>
+</div>-->
 
 <button onclick="topFunction()" id="back-to-top" title="Back to Top" href="#" role="button" class="btn btn-light btn-lg back-to-top" role="button">Back to Top</button>
 
