@@ -14,29 +14,38 @@
 </head>
 
 <body>
- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+ <div position-relative>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top justify-content-between" role="navigation">
    <a class="navbar-brand" href="./Jordan%20web%20page"><img src="Cloud9_logo_c._2023.svg.png" width="60px" alt="Cloud 9 Logo"></a>
    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
     <span class="navbar-toggler-icon"></span>
    </button>
 
    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-    <ul class="nav justify-content-center nav-pills nav-fill" role="navigation">
-     <li class="nav-item">
-      <a class="nav-link" href="./Jordan%20web%20page">Home</a></li>
-     <li class="nav-item">
-      <a class="nav-link" href="./Jordan%20abou%20tme%20">About Me</a></li>
-     <li class="nav-item"><a class="nav-link" href="./Jordan%20Contact%20me">Contact Me</a></li>
-     </li>
-  </ul>
+     <ul class="nav justify-content-center mx-auto nav-pills nav-fill" role="navigation">
+       <li class="nav-item">
+        <a class="nav-link" href="./Jordan%20web%20page">Home</a></li>
+       <li class="nav-item">
+        <a class="nav-link" href="./Jordan%20abou%20tme%20">About Me</a></li>
+       <li class="nav-item"><a class="nav-link" href="./Jordan%20Contact%20me">Contact Me</a></li>
+       </li>
+     </ul>
+     <ul>
+       <li class="nav-item nohover music">
+         <audio id="music" src="Zara Larsson Lush Life Lyrics.mp3" preload="auto"></audio>
+         <button type="button" class="btn btn-link justify-content-right music-button"  aria-controls="music" aria-label="Music player" onclick="musicPlay()">
+         <a class="nav-link" href="#"><img src="music2.png" width="65px"></a>
+       </li>
+      </ul> 
+  </div>
+ </nav>
 </div>
-</nav>
 
-<p class="text">
+<p class="about-text">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
-<iframe class="c9video" width="80%" height="300px" src="https://www.youtube.com/embed/72q7AmcfF7A" frameborder="0" allowfullscreen ></iframe>
+<iframe class="c9video" width="889px" height="500" src="https://www.youtube.com/embed/72q7AmcfF7A" frameborder="0" allowfullscreen allow = "accelerometer; autoplay; clipboard-write; encryptedmedia; gyroscope; picture-in-picture; web-share"></iframe>
 
 <button onclick="topFunction()" id="back-to-top" title="Back to Top" href="#" role="button" class="btn btn-light btn-lg back-to-top" role="button">Back to Top</button>
 

@@ -22,14 +22,15 @@ li:hover {
 .nav-item {
     font-size: 30px;
     padding: 0 30px 0;
+    margin: -10px;
+    justify-content: center!important;
 }
 
-.text, h1 {
+.text, h1, .about-text {
     display: grid;
     font-size: 30px;
     color: blue;
     margin: 90px 60px 60px 60px ;
-    
 }
 
 body {
@@ -64,5 +65,32 @@ body {
 .c9video {
     display: block;
     margin: auto;
+    padding-bottom: 30px;
+}
+
+iframe {
+    border: none;
+}
+
+.about-text {
+    background-color: /*rgb(2, 2, 159)*/ #0000ff;
+    color:rgb(203, 227, 255);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 8rem;
+}
+
+.music {
+    margin-right: -2rem;
+    margin-top: 0.20rem;
+    color: icon-blue;
+}
+
+.music:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+ul {
+    list-style: none;
 }
 
