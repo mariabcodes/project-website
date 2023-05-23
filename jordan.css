@@ -94,3 +94,15 @@ ul {
     list-style: none;
 }
 
+.carousel-item img{
+    min-width: 30%;
+    max-width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.carousel {
+    margin: 20vw;
+}

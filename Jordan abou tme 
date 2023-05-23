@@ -31,11 +31,10 @@
        </li>
      </ul>
      <ul>
-       <li class="nav-item nohover music">
-         <audio id="music" src="Zara Larsson Lush Life Lyrics.mp3" preload="auto"></audio>
-         <button type="button" class="btn btn-link justify-content-right music-button"  aria-controls="music" aria-label="Music player" onclick="musicPlay()">
-         <a class="nav-link" href="#"><img src="music2.png" width="65px"></a>
-       </li>
+       <li class="nav-item nohover">
+         <audio id="music-button" src="Zara Larsson Lush Life Lyrics.mp3" preload="auto"></audio>
+         <a onclick="musicPlay()"><img src="music2.png" width="65px"></a>
+        </li>
       </ul> 
   </div>
  </nav>

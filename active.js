@@ -20,12 +20,18 @@ function topFunction() {
 }
 
 /* Music Player Button*/
-
-function musicPlay() {
-  let musicButton = document.getElementsByClassName("music-button");
-  if (Audio.paused) { 
-    audio.musicPlay();
+var music = document.querySelector("#music-button");
+document.querySelector(".play-pause").addEventListener("click",
+function() {
+  if (music.paused) {
+    music.play();
   } else {
-    audio.pause();
+    music.pause();
   }
-}
+});
+/* 
+function musicPlay() {
+  var music = document.getElementsById("music-button");
+  return music.paused ? music.play() : music.pause();
+};*/
+
