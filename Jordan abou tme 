@@ -35,7 +35,7 @@
          <audio id="music-button" src="Zara Larsson Lush Life Lyrics.mp3" preload="auto"></audio>
          <a onclick="musicPlay()"><img src="music2.png" width="65px"></a>
         </li>
-      </ul> 
+     </ul> 
   </div>
  </nav>
 </div>

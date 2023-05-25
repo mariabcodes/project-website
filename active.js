@@ -19,8 +19,8 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-/* Music Player Button*/
-var music = document.querySelector("#music-button");
+/* Music Player Button
+
 document.querySelector(".play-pause").addEventListener("click",
 function() {
   if (music.paused) {
@@ -29,9 +29,21 @@ function() {
     music.pause();
   }
 });
-/* 
+
 function musicPlay() {
   var music = document.getElementsById("music-button");
   return music.paused ? music.play() : music.pause();
-};*/
+}*/
 
+var music = document.querySelector("#music-button");
+var isPlaying = false;
+
+function musicPlay() {
+  return music.paused ? music.play() : music.pause();
+}
+music.onplaying = function() {
+  isPlaying = true;
+};
+music.onpause = function () {
+  isPlaying = false;
+}
