@@ -124,3 +124,14 @@ padding: none;
 .nohover:hover {
     background-color: #F8F9FA;
 }
+
+.form {
+    padding: 95px 40px;
+}
+
+label {
+    margin: 0 0 5px 0;
+}
+input {
+    margin-left: 5px;
+}
