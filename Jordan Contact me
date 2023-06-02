@@ -3,38 +3,50 @@
 <head>
  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-
+ 
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="jordan.css">
+ 
  <script src="active.js"></script>
 
  <title>Jordan</title>
 </head>
 
 <body>
- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
-   <a class="navbar-brand" href="./Jordan%20web%20page"><img src="Cloud9_logo_c._2023.svg.png" width="60px" alt="Cloud 9 Logo"></a>
-   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
-    <span class="navbar-toggler-icon"></span>
-   </button>
-
-   <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-    <ul class="nav justify-content-center nav-pills nav-fill" role="navigation">
-     <li class="nav-item">
-      <a class="nav-link" href="./Jordan%20web%20page">Home</a></li>
-     <li class="nav-item">
-      <a class="nav-link" href="./Jordan%20abou%20tme%20">About Me</a></li>
-     <li class="nav-item"><a class="nav-link" href="./Jordan%20Contact%20me">Contact Me</a></li>
-     </li>
-  </ul>
-</div>
-</nav>
-
+  <div position-relative>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top justify-content-between" role="navigation">
+      <a class="navbar-brand" href="./Jordan%20web%20page"><img src="Cloud9_logo_c._2023.svg.png" width="60px" alt="Cloud 9 Logo"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+   
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="nav justify-content-center mx-auto nav-pills nav-fill" role="navigation">
+          <li class="nav-item">
+           <a class="nav-link" href="./Jordan%20web%20page">Home</a></li>
+          <li class="nav-item">
+           <a class="nav-link" href="./Jordan%20abou%20tme%20">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Jordan%20Contact%20me">Contact Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="./form%20page">Enquire</a></li></li>  
+        </ul>
+        <ul>
+          <li class="nav-item nohover">
+            <audio id="music-button">
+             <source src="Zara%20Larsson%20Lush%20Life%20Lyrics.mp3" preload="auto" type="audio/mpeg"/>
+            </audio>
+            <div id="music-button-container">
+             <div id="play-pause" class="play"></div>
+            </div>
+            <a onclick="musicPlay()"></a>
+           </li>
+        </ul> 
+     </div>
+    </nav>
+   </div>
 <p class="text" id="start">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-</p>
+Thank you for visiting, feel free to drop me a message on any of my social media platforms. I am looking forward to connecting with you.<break/>As a bonus, here are a few of my favourite photos in my travels.</p>
 
 <div id="photo-carousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -84,6 +96,26 @@
 </div>
 
 <button onclick="topFunction()" id="back-to-top" title="Back to Top" href="#" role="button" class="btn btn-light btn-lg back-to-top" role="button">Back to Top</button>
+<script>
+  var music = document.getElementById('music-button');
+var controlButton = document.getElementById('play-pause');
 
+function musicPlay() {
+  if (music.paused) {
+    "use strict";
+    music.play();
+    controlButton.className = "pause";
+  } else {
+    music.pause();
+    controlButton.className = "play";
+  }
+}
+
+controlButton.addEventListener("click", musicPlay);
+music.addEventListener("ended", function () {
+  "use strict"
+  controlButton.className = "play";
+});
+</script>
 </body>
 </html>
