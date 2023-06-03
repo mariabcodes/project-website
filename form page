@@ -50,12 +50,10 @@
   <form method="post" name="enquire-form" action="form.php" enctype="multipart/form-data" class="form">
     <h2>Enquire Form</h2>
     <p>Welcome, please add your details and I will get back to you as soon as possible.</p>
-      <fieldset>
-         <label for="first-name">First Name<input id="first-name" name="first-name" type="text" placeholder="First name" required /><span class="error">* <?php echo $fnameErr;?></span></label>
-            <label for="last-name">Last Name<input id="last-name" name="last-name" type="text" placeholder="Last name"required /><span class="error">* <?php echo $lnameErr;?></span></label><br/>
-            <label for="email-address">Email<input id="email" name="email" type="email" placeholder="Your e-mail" required /><span class="error">* <?php echo $emailErr;?></span></label><br />
-            <label for="description">Please describe your enquiry:<br/><textarea id="description" name="description" rows="5" cols="50" placeholder="I would like to find out..."></textarea><span class="error"><?php echo $descriptionErr;?></span></label>
-      </fieldset>
+      <label for="first-name">First Name<input name="first-name" type="text" id="first-name" placeholder="First name" required /><span class="error">* <?php echo $fnameErr;?></span></label>
+      <label for="last-name">Last Name<input name="last-name" type="text" id="last-name" placeholder="Last name"required /><span class="error">* <?php echo $lnameErr;?></span></label><br/>
+      <label for="email-address">Email<input name="email-address" type="email" id="email-address" placeholder="Your e-mail" required /><span class="error">* <?php echo $emailErr;?></span></label><br />
+      <label for="description">Please describe your enquiry:<br/><input name="description" type="text" id="description" placeholder="I would like to find out..."><span class="error"><?php echo $descriptionErr;?></span></label><br />
      <input type="submit" name="submit-btn" value="Submit Enquiry" class="btn btn-success btn-lg btn-block"></input>
   </form>
 </main>

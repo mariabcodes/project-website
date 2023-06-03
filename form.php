@@ -30,7 +30,7 @@ $errorMessage = '';
    if (!empty($errors)) {
        $toEmail = 'krugermaria@outlook.com';
        $emailSubject = 'You have received an email from your contact form';
-       $headers = ['From' => $email, 'Reply-To' => $email, 'Context-type' => 'text/html; charset=utf-8'];
+       $headers = ["From" => $email, 'Reply-To' => $email, 'Context-type' => 'text/html; charset=utf-8'];
        $description = ["Name: {$fname}", "Email: {$email}", "Enquiry:", $message];
        $body = join(PHP_EOL, $description);
 
@@ -50,12 +50,8 @@ var_dump($_POST);
 $fnameErr = $lnameErr = $emailErr = $descriptionErr = "";
 $fname = $lname = $email = $description = "";
 $successMessage = "Success! You have submitted the form and it will be received shortly.";
-$request_method = strtoupper(getenv('REQUEST_METHOD'));$http_methods = array('GET', 'POST', 'HEAD');
-
-$_POST['first-name'] = $fname;
-$_POST['last-name'] = $lname;
-$_POST['email'] = $email;
-$_POST['description']= $description;
+$request_method = strtoupper(getenv('REQUEST_METHOD'));
+$http_methods = array('GET', 'POST', 'HEAD');
 
 function test_input($data) {
     $data = trim($data);
@@ -85,10 +81,10 @@ if (in_array($request_method, $http_methods)) {
            }
         } 
     
-        if (empty($_POST["email"])) {
+        if (empty($_POST["email-address"])) {
             $emailErr = "Email is required";
         } else {
-            $email = test_input($_POST["email"]);
+            $email = test_input($_POST["email-address"]);
             //check the email format
              if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $emailErr = "Invalid email format";
@@ -100,24 +96,29 @@ if (in_array($request_method, $http_methods)) {
         } else {
             $description = test_input($_POST["description"]);
         } 
-    }    
+    } 
 }
 
 if (isset($_POST['submit-btn'])) {
     $fname = $_POST['first-name'];
     $lname = $_POST['last-name'];
-    $mailFrom = $_POST['email'];
-    $message = $_POST['description'];
+    $mailFrom = $_POST['email-address'];
+    $description = $_POST['description'];
 
-    $mailTo = "krugermaria@outlook.com";
-    $headers = ['From' => $email, 'Reply-To' => $email, 'Context-type' => 'text/html; charset=utf-8'];
+    $to = "krugermaria@outlook.com";
+
+    $additional_headers = 'From: {$fname} {$mailFrom}' ."\r\n";
+    $additional_headers .= 'Reply-To: "$mailFrom'. "\r\n";
+    $additional_headers .= 'Content-type: text/html; charset=utf-8';
+    
     $subject = "Message from website";
-    $txt = "You have received an email from ".$name. ".\n\n".$message;
+    $message = "You have received an email from ".$fname. "".$lname."\r\n".$description;
+    $message = wordwrap($message, 70, "\r\n");
 
     echo $successMessage;
 
-    mail($mailTo, $subject, $txt, $headers);
-    header("Location: form.php?mailsend");//to get a confirmation that the mail has been sent//
+    mail($to, $subject, $message, $additional_headers);
+      /*header("Location: form.php?mailsend");//to get a confirmation that the mail has been sent//*/
 } else {
     echo 'The form has not been submitted. Please check your entry.';
 }
