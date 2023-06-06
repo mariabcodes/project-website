@@ -245,3 +245,31 @@ input {
         margin-top: -5px;
     }
 }
+
+.landscape-image {
+    position: relative;
+    margin-top: 70px;
+    height: 300px;
+}
+
+.landscape-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:  url("PHOTO-2023-05-14-14-57-17.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    opacity: 0.3;
+}
+
+.landscape-image-writing h1{
+    text-align: center;
+    position: absolute;
+    color: black;
+    opacity: 1;
+    margin-top: 60px;
+}

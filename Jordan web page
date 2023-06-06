@@ -47,9 +47,14 @@
       </ul> 
    </div>
   </nav>
- </div>
+</div>
 
-<h1>Welcome to my website, where I invite you to join me on a thrilling journey through the captivating world of Esports.</h1>
+<div class="landscape-image">
+  <div class="landscape-image-writing">
+    <h1>Welcome to my website, where I invite you to join me on a thrilling journey through the captivating world of Esports.</h1>
+  </div>
+</div>
+
 <p class="text">
   In my day-to-day life, I am fueled by an unwavering love for the electrifying universe of Esports. Although my focus lies primarily on the adrenaline-fueled world of League of Legends, this website takes you beyond my professional pursuits. Here, you won't find articles or analysis, but rather a glimpse into my personal experiences and reflections within this fascinating realm.
   <br><br>

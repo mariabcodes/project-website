@@ -73,6 +73,7 @@ if (isset($_POST['submit-btn'])) {
     $additional_headers = 'From: {$fname} {$mailFrom}' ."\r\n";
     $additional_headers = 'Reply-To: "$mailFrom'. "\r\n";
     $additional_headers .= 'Content-type: text/html; charset=utf-8';
+    $additional_headers .= 'X-Mailer: PHP' .phpversion(8.2);
 
     echo $successMessage;
 
