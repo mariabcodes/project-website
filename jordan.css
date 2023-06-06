@@ -221,7 +221,27 @@ input {
     z-index: 1;
 }
 
-.picture-icon img{
-    border-radius: 30%;
+.picture-icon img {
+    border-radius: 20%;
     object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 767px) {
+    .picture-icon {
+        position: static;
+        margin-top: 100px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .picture-icon img {
+        max-width: 400px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .form {
+        margin-top: -5px;
+    }
 }
