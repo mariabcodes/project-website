@@ -71,14 +71,19 @@ if (isset($_POST['submit-btn'])) {
     $message = wordwrap($message, 70, "\r\n");
 
     $additional_headers = 'From: {$fname} {$mailFrom}' ."\r\n";
-    $additional_headers .= 'Reply-To: "$mailFrom'. "\r\n";
+    $additional_headers = 'Reply-To: "$mailFrom'. "\r\n";
     $additional_headers .= 'Content-type: text/html; charset=utf-8';
 
     echo $successMessage;
 
     mail($to, $subject, $message, $additional_headers);
-      /*header("Location: form.php?mailsend");//to get a confirmation that the mail has been sent//*/
+    //header("Location: form.php?mailsend");//to get a confirmation that the mail has been sent//
 } else {
     echo 'The form has not been submitted. Please check your entry.';
 }
+
+error_reporting(-1);
+ini_set('display_errors', 'On');
+set_error_handler("var_dump");
+
 ?>

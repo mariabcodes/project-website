@@ -9,6 +9,10 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="jordan.css">
  <script src="active.js"></script>
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 
  <title>Jordan</title>
 </head>
@@ -45,9 +49,13 @@
   </nav>
  </div>
 
-<h1>Come on in to my home!</h1>
+<h1>Welcome to my website, where I invite you to join me on a thrilling journey through the captivating world of Esports.</h1>
 <p class="text">
-Hi, my name is Jordan.<break/> I am an eSports fanatic, live to watch my favourite team - Cloud9. I partcularly enjoy watching their League of Legends team, who are incredible gamers and inspire me each night I watch them to write enthralling articles.<break/> The tactical play that the team uses is immensely fascinating and it is world class.<break/>As well, I love watching my favourite football team - Manchester United. I have watched a couple of their games in-person and I loved the atmosphere in the stadium. It was amazing to see the team score and win the games.</p>
+  In my day-to-day life, I am fueled by an unwavering love for the electrifying universe of Esports. Although my focus lies primarily on the adrenaline-fueled world of League of Legends, this website takes you beyond my professional pursuits. Here, you won't find articles or analysis, but rather a glimpse into my personal experiences and reflections within this fascinating realm.
+  <br><br>
+  Drawing upon my extensive knowledge and experience, I strive to provide you with an unparalleled perspective on the exhilarating clashes, strategic gameplay, and the incredible journeys of the players and teams that make this universe come alive. Whether you're a die-hard League of Legends fan or simply curious about the fascinating realm of Esports, this is the perfect destination for you.
+  <br><br>
+  So, fasten your seatbelts and prepare to embark on an enthralling adventure with me as your guide. Together, we will explore the triumphs, the setbacks, the underdogs, and the champions, all while celebrating the boundless spirit of competition that defines the vibrant world of Esports. Let's dive into the heart of Esports and experience the magic firsthand.</p>
 
 <button onclick="topFunction()" id="back-to-top" title="Back to Top" href="#" role="button" class="btn btn-light btn-lg back-to-top" role="button">Back to Top</button>
 

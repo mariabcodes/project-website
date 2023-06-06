@@ -8,6 +8,10 @@
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="jordan.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
  
  <script src="active.js"></script>
 
@@ -46,7 +50,7 @@
     </nav>
    </div>
 <p class="text" id="start">
-Thank you for visiting, feel free to drop me a message on any of my social media platforms. I am looking forward to connecting with you.<break/>As a bonus, here are a few of my favourite photos in my travels.</p>
+  Thank you for stopping by! Don't hesitate to reach out and connect with me through any of my social media platforms — I would love to hear from you.<break/> And as a special treat, I've included a selection of my favorite travel photos for you to enjoy.</p>
 
 <div id="photo-carousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -57,32 +61,28 @@ Thank you for visiting, feel free to drop me a message on any of my social media
     <button type="button" data-bs-target="#photo-carousel" aria-label="Slide 4" data-bs-slide-to="4"></button>
     <button type="button" data-bs-target="#photo-carousel" aria-label="Slide 5" data-bs-slide-to="5"></button>
     <button type="button" data-bs-target="#photo-carousel" aria-label="Slide 6" data-bs-slide-to="6"></button>
-    <button type="button" data-bs-target="#photo-carousel" aria-label="Slide 7" data-bs-slide-to="7"></button>
   </div>
   <div class="carousel-inner">
    <div class="carousel-item active">
-      <img class="d-block w-100 align-middle" src="./IMG_4656.jpg" width="50%" alt="A photo of Jordan">
+      <img class="d-block w-100 align-middle" src="./PHOTO-2023-05-14-18-58-20.jpg" width="50%" alt="A photo of Jordan">
     </div>
    <div class="carousel-item">
-     <img class="d-block w-100 align-middle" src="./20190716_122559.JPG" width="50%" alt="2nd Picture">
+     <img class="d-block w-100 align-middle" src="./PHOTO-2023-05-14-14-57-17.jpg" width="50%" alt="2nd Picture">
    </div>
    <div class="carousel-item">
-     <img class="d-block w-100 align-middle" src="./20190816_121100.JPG" width="50%" alt="3rd Picture">
+     <img class="d-block w-100 align-middle" src="./PHOTO-2023-05-06-19-02-49.jpg" width="50%" alt="3rd Picture">
    </div>
    <div class="carousel-item">
-     <img class="d-block w-100 align-middle" src="./20200228_202853.JPG" width="50%" alt="3rd Picture">
+     <img class="d-block w-100 align-middle" src="./PHOTO-2023-05-03-17-51-40.jpg" width="50%" alt="3rd Picture">
    </div>
    <div class="carousel-item">
-     <img class="d-block w-100 align-middle" src="./20200730_163830.JPG" width="50%" alt="3rd Picture">
+     <img class="d-block w-100 align-middle" src="./PHOTO-2023-05-03-15-24-48.jpg" width="50%" alt="3rd Picture">
    </div>
    <div class="carousel-item">
-     <img class="d-block w-100 align-middle" src="./20210111_172146.JPG" width="50%" alt="3rd Picture">
+     <img class="d-block w-100 align-middle" src="./PHOTO-2023-05-02-13-03-53.jpg" width="50%" alt="3rd Picture">
    </div>
    <div class="carousel-item">
-     <img class="d-block w-100 align-middle" src="./8e68bcc3-7490-43dc-8e31-a2e13c56f5cc 2.JPG" width="50%" alt="3rd Picture">
-   </div>
-   <div class="carousel-item">
-     <img class="d-block w-100 align-middle" src="./a6e87244-d640-4bb4-ad58-f2381880be66.JPG" " width="50%" alt="3rd Picture">
+     <img class="d-block w-100 align-middle" src="./PHOTO-2022-12-11-22-46-31.jpg" " width="50%" alt="3rd Picture">
    </div>
   </div>
   <a class="carousel-control-prev" data-bs-target="#photo-carousel" role="button" data-bs-slide="prev">

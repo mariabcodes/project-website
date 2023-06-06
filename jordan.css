@@ -1,9 +1,9 @@
 /* THIS CODE WORKS, PLEASE DO NOT CHANGE!!! */
 * {
-    font-size: 14px;
-    color: rgb(4, 4, 255);
+    color: #0d6efd;
     margin: 0;
     padding: 0;
+    font-family: 'Albert Sans', sans-serif;
 }
 
 .navbar-brand {
@@ -17,8 +17,8 @@ li:hover {
 
 .navbar-toggler {
     margin-right: 20px;
-    color: #00B0EF;
-    border: 1px solid #00B0EF;
+    color: #00b0ef;
+    border: 1.5px solid #00b0ef;
 }
 
 .nav-item {
@@ -29,15 +29,32 @@ li:hover {
     align-items: center;
 }
 
-.text, h1, .about-text {
+h1, .about-text {
     display: grid;
     font-size: 30px;
-    color: blue;
-    margin: 90px 60px 60px 60px ;
+    color: #0d6efd;
+    margin: 90px 60px 60px 60px;
+}
+
+h1 {
+    font-weight: 500;
+    padding: 30px 20px 0 20px;
+}
+
+h2, h5 {
+    color: #0d6efd;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: -10px;
+    margin: 50px;
+    font-size: 25px;
 }
 
 body {
-    background-color:rgb(193, 225, 251);
+    background-color:rgba(193, 225, 251, 0.526);
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
     /*padding-top: 80px;*/
@@ -61,7 +78,7 @@ body {
     z-index: 99;
     display: flex;
     position: fixed;
-    color:blue;
+    color:#0000ff;
     font-size: 20px;
 }
 
@@ -76,7 +93,7 @@ iframe {
 }
 
 .about-text {
-    background-color: /*rgb(2, 2, 159)*/ #0000ff;
+    background-color: #0000ff;
     color:rgb(203, 227, 255);
     border-radius: 10px;
     padding: 15px;
@@ -98,6 +115,8 @@ ul {
 
 .carousel {
     margin: 20vw;
+    margin-top: -10px;
+    margin-bottom: 30px;
 }
 
 #music-button-container, #play-pause {
@@ -110,6 +129,7 @@ background-position: center;
 background-size: 60px;
 padding: none;
 }
+
 .play {
     background-image: url(./music2.png);
     margin-right: -1rem;
@@ -126,12 +146,82 @@ padding: none;
 }
 
 .form {
-    padding: 95px 40px;
+    margin: 100px 60px;
+    padding: 30px;
+    border: 10px solid #F8F9FA;
+    color:#0000ff;
+    justify-items: center;
+    z-index: 99;
 }
+
+input {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 70%;
+    height: 100px;
+}
+
+/*.enquiry {
+    padding: 5%;
+    padding-right: -30%;
+    border: 5px solid #F8F9FA;
+    display: flexbox;
+    justify-items: center;
+}*/
 
 label {
     margin: 0 0 5px 0;
 }
 input {
     margin-left: 5px;
+}
+
+#start {
+    padding: 95px 0 0;
+}
+
+@media (width: 512px) {
+    
+}
+
+.jordan-photo-and-intro {
+    display: inline-grid;
+    grid-auto-flow: row;
+    padding-right: 4%;
+}
+
+.profile-photo {
+    max-width: 400px;
+    min-width: 150px;
+    grid-column: 5;
+    grid-row: 1;
+    margin-top: 65px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.about-text {
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    place-self: center;
+}
+
+.introduction {
+    margin: -10px 50px 30px 50px;
+}
+
+.picture-icon {
+    position: absolute;
+    right: 80px;
+    top: 120px;
+    z-index: 1;
+}
+
+.picture-icon img{
+    border-radius: 30%;
+    object-fit: cover;
 }
