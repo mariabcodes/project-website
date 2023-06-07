@@ -86,6 +86,8 @@ body {
     display: block;
     margin: auto;
     padding-bottom: 30px;
+    width: 80vw;
+    height: 80vh;
 }
 
 iframe {
@@ -124,10 +126,10 @@ ul {
     height: 60px;
     width: 70px;
     
-background-repeat: no-repeat;
-background-position: center;
-background-size: 60px;
-padding: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+    padding: none;
 }
 
 .play {
@@ -182,10 +184,6 @@ input {
     padding: 95px 0 0;
 }
 
-@media (width: 512px) {
-    
-}
-
 .jordan-photo-and-intro {
     display: inline-grid;
     grid-auto-flow: row;
@@ -211,7 +209,7 @@ input {
 }
 
 .introduction {
-    margin: -10px 50px 30px 50px;
+    margin: -10px 65px 30px 65px;
 }
 
 .picture-icon {
@@ -228,7 +226,7 @@ input {
     height: 200px;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .picture-icon {
         position: static;
         margin-top: 100px;
@@ -243,6 +241,28 @@ input {
 
     .form {
         margin-top: -5px;
+    }
+
+    .c9video {
+        width: 80vw;
+        height: 60vh;
+    }
+
+    .picture-icon img {
+        max-width: 40%; 
+        max-height: 25%;
+    }
+}
+
+@media only screen and (max-width: 1115px) {
+    .c9video {
+        width: 70vw;
+        height: 40vh;
+    }
+
+    .picture-icon img {
+        position: relative;
+
     }
 }
 
@@ -272,4 +292,34 @@ input {
     color: black;
     opacity: 1;
     margin-top: 60px;
+}
+
+.name-bold {
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+.carousel-control-prev-icon {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300b0ef' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300b0ef' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators > button {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border-color: #00b0ef;
+    background-color: #00b0ef;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #00b0ef;
 }

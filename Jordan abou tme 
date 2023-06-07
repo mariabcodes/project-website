@@ -55,11 +55,11 @@
   In my day-to-day life, I am an Esports journalist primarily writing about League of Legends and Valorant, fascinated by the multitude of tactical plays available to teams and intrigued by their decision-making process in utilizing them, all stemming from my love of Esports.</p>
 </div>
 
-<p class="introduction">
-  Hi, my name is Jordan.<break><br> I am an Esports fanatic, live to watch my favourite team - Cloud9. I partcularly enjoy watching their League of Legends team, who are incredible gamers and inspire me each night I watch them to write enthralling articles.<br><br> The tactical play that the team uses is immensely fascinating and it is world class.<break/> As well, I love watching my favourite football team - Manchester United. I have watched a couple of their games in-person and I loved the atmosphere in the stadium. It was amazing to see the team score and win the games.</p>
+<div class="introduction">
+  <p class="name-bold">Hi, my name is Jordan.</p><br> I am an Esports fanatic, live to watch my favourite team - Cloud9. I partcularly enjoy watching their League of Legends team, who are incredible gamers and inspire me each night I watch them to write enthralling articles.<br><br> The tactical play that the team uses is immensely fascinating and it is world class.<break/> As well, I love watching my favourite football team - Manchester United. I have watched a couple of their games in-person and I loved the atmosphere in the stadium. It was amazing to see the team score and win the games.</div>
 
 <div class="video">
-  <iframe class="c9video" width="889px" height="500" src="https://www.youtube.com/embed/72q7AmcfF7A" loading="lazy" frameborder="0" allow="fullscreen" allow="accelerometer; clipboard-write; encryptedmedia; gyroscope; picture-in-picture; web-share" controls="2"></iframe>
+  <iframe class="c9video"  src="https://www.youtube.com/embed/72q7AmcfF7A" loading="lazy" frameborder="0" allow="fullscreen" allow="accelerometer; clipboard-write; encryptedmedia; gyroscope; picture-in-picture; web-share" controls="2"></iframe>
 </div>
 
 <button onclick="topFunction()" id="back-to-top" title="Back to Top" href="#" role="button" class="btn btn-light btn-lg back-to-top">Back to Top</button>
