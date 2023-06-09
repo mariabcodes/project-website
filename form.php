@@ -1,5 +1,14 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+
+// Include Composer autoload.php file
+require 'vendor/autoload.php';
+
+// Create object of PHPMailer class
+$mail = new PHPMailer(true);
+
+$output = '';
 $errors = [];
 $errorMessage = '';
 
@@ -58,6 +67,8 @@ if (in_array($request_method, $http_methods)) {
 }
 
 if (isset($_POST['submit-btn'])) {
+    $mail = new PHPMailer(true);
+
     $fname = $_POST['first-name'];
     $lname = $_POST['last-name'];
     $mailFrom = $_POST['email-address'];
@@ -76,6 +87,7 @@ if (isset($_POST['submit-btn'])) {
     $additional_headers .= 'X-Mailer: PHP' .phpversion(8.2);
 
     echo $successMessage;
+
 
     mail($to, $subject, $message, $additional_headers);
     //header("Location: form.php?mailsend");//to get a confirmation that the mail has been sent//

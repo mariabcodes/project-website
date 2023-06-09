@@ -262,7 +262,9 @@ input {
 
     .picture-icon img {
         position: relative;
-
+        right: 80px;
+        width: 150px;
+        height: 150px;
     }
 }
 
